@@ -1,0 +1,31 @@
+{
+  "enemies": [
+    {
+      "name": "Alloy Vulture",
+      "baseHP": 140,
+      "hpPerLevel": 42,
+      "baseDamage": 15,
+      "damagePerLevel": 3,
+      "speed": 3.0,
+      "armor": 0
+    },
+    {
+      "name": "Beetle",
+      "baseHP": 80,
+      "hpPerLevel": 24,
+      "baseDamage": 12,
+      "damagePerLevel": 2.4,
+      "speed": 6.0,
+      "armor": 0
+    },
+    {
+      "name": "Lemurian",
+      "baseHP": 120,
+      "hpPerLevel": 36,
+      "baseDamage": 15,
+      "damagePerLevel": 3.0,
+      "speed": 7.0,
+      "armor": 0
+    }
+  ]
+}

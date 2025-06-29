@@ -1,0 +1,134 @@
+{
+  "chests": [
+    {
+      "name": "Small Chest",
+      "baseCost": 25,
+      "guaranteedRarity": null,
+      "itemChances": {
+        "common": 79.2,
+        "uncommon": 19.8,
+        "legendary": 0.99
+      }
+    },
+    {
+      "name": "Large Chest",
+      "baseCost": 50,
+      "guaranteedRarity": "uncommon",
+      "itemChances": {
+        "common": 0,
+        "uncommon": 80,
+        "legendary": 20
+      }
+    },
+    {
+      "name": "Legendary Chest",
+      "baseCost": 400,
+      "guaranteedRarity": "legendary",
+      "itemChances": {
+        "common": 0,
+        "uncommon": 0,
+        "legendary": 100
+      }
+    },
+    {
+      "name": "Equipment Barrel",
+      "baseCost": 25,
+      "guaranteedRarity": "equipment",
+      "itemChances": null
+    },
+    {
+      "name": "Multishop Terminal - Common",
+      "baseCost": 25,
+      "rarityType": "common",
+      "itemCount": 3,
+      "hiddenItemsProbability": 20,
+      "allowDuplicates": true
+    },
+    {
+      "name": "Multishop Terminal - Uncommon",
+      "baseCost": 50,
+      "rarityType": "uncommon",
+      "itemCount": 3,
+      "hiddenItemsProbability": 20,
+      "allowDuplicates": true
+    },
+    {
+      "name": "Equipment Triple Shop",
+      "baseCost": 50,
+      "rarityType": "equipment",
+      "itemCount": 3
+    },
+    {
+      "name": "Category Chest",
+      "baseCost": 30,
+      "guaranteedRarity": null,
+      "itemChances": {
+        "common": 63.06,
+        "uncommon": 27.03,
+        "legendary": 0.9
+      },
+      "category": true
+    },
+    {
+      "name": "Large Category Chest",
+      "baseCost": 30,
+      "guaranteedRarity": null,
+      "itemChances": {
+        "common": 0,
+        "uncommon": 80,
+        "legendary": 20
+      },
+      "category": true
+    },
+    {
+      "name": "Adaptive Chest",
+      "baseCost": 50,
+      "guaranteedRarity": null,
+      "itemChances": {
+        "common": 63.06,
+        "uncommon": 27.03,
+        "legendary": 0.9,
+        "equipment": 9.01
+      }
+    },
+    {
+      "name": "Rusty Lockbox",
+      "baseCost": 0,
+      "guaranteedRarity": "uncommon",
+      "itemChances": {
+        "common": 0,
+        "uncommon": 80,
+        "legendary": 20
+      },
+      "requiresKey": true
+    },
+    {
+      "name": "Encrusted Cache",
+      "baseCost": 0,
+      "guaranteedRarity": "void",
+      "itemChances": null,
+      "requiresKey": true
+    },
+    {
+      "name": "Crashed Multishop Delivery",
+      "baseCost": 0,
+      "guaranteedRarity": null,
+      "itemChances": {
+        "common": 60,
+        "uncommon": 40,
+        "legendary": 0
+      },
+      "itemCount": 2
+    },
+    {
+      "name": "Cloaked Chest",
+      "baseCost": 0,
+      "guaranteedRarity": null,
+      "itemChances": {
+        "common": 79.2,
+        "uncommon": 19.8,
+        "legendary": 0.99
+      }
+    }
+  ]
+}

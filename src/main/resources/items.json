@@ -1,0 +1,172 @@
+{
+  "items": [
+    {
+      "id": 7,
+      "name": "Lens-Maker's Glasses",
+      "description": "Gain 10% chance for hits to 'Critically Strike', dealing double damage.",
+      "category": "Damage",
+      "rarity": "Common",
+      "stats": [
+        {
+          "stat": "Critical Chance",
+          "value": 10,
+          "stacking": "Linear",
+          "stackAdd": 10
+        }
+      ],
+      "mechanics": {
+        "notes": [
+          "Critical strikes are reflected by a sharper hit sound and a red tint on the damage numbers.",
+          "Crit chance is affected by Luck.",
+          "Effective stacking limit is 10 stacks for 100% crit chance.",
+          "Items increasing crit chance synergize with others like Harvester's Scythe or Predatory Instincts."
+        ],
+        "corruption": {
+          "corruptsTo": "Lost Seer's Lenses",
+          "modifier": "Transforms existing Lens-Maker's Glasses into Lost Seer's Lenses."
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "Tougher Times",
+      "description": "Chance to block incoming damage.",
+      "category": "Utility",
+      "rarity": "Common",
+      "stats": [
+        {
+          "stat": "Block Chance",
+          "value": 15,
+          "stacking": "Hyperbolic",
+          "stackAdd": 15,
+          "formula": "(0.15 * x) / (0.15 * x + 1)"
+        }
+      ],
+      "mechanics": {
+        "notes": [
+          "Blocks incoming damage, including self-inflicted effects.",
+          "Hyperbolic stacking limits actual block chance, reducing effectiveness with more stacks.",
+          "Cannot block Void Reaver implosions or Void Fog damage."
+        ],
+        "corruption": {
+          "corruptsTo": "Safer Spaces",
+          "modifier": "Blocks damage once every few seconds instead of probabilistic chance."
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "Hopoo Feather",
+      "description": "Gain an extra jump.",
+      "category": "Utility",
+      "rarity": "Uncommon",
+      "stats": [
+        {
+          "stat": "Extra Jump",
+          "value": 1,
+          "stacking": "Linear",
+          "stackAdd": 1
+        }
+      ],
+      "mechanics": {
+        "notes": [
+          "Grants additional jumps beneficial for Survivors with low mobility.",
+          "Extra jumps are not affected by Wax Quail.",
+          "Engineer’s TR58 Carbonizer Turrets will not use Hopoo Feathers."
+        ]
+      }
+    },
+    {
+      "id": 100,
+      "name": "Weeping Fungus",
+      "description": "Heal while sprinting. Corrupts all Bustling Fungi.",
+      "category": "Healing",
+      "rarity": "Void",
+      "stats": [
+        {
+          "stat": "HP/s",
+          "value": 2,
+          "stacking": "Linear",
+          "stackAdd": 2
+        }
+      ],
+      "mechanics": {
+        "notes": [
+          "Healing happens twice per second, splitting the HP gain into two ticks of +1% each.",
+          "Sprinting is required for healing.",
+          "Particularly effective for Survivors with the Agile keyword in their abilities.",
+          "Engineer’s stationary turrets and TR58 Carbonizer Turrets do not benefit from this item."
+        ],
+        "corruption": {
+          "corruptsFrom": "Bustling Fungus",
+          "modifier": "Transforms Bustling Fungi into Weeping Fungus."
+        }
+      }
+    },
+    {
+      "id": 101,
+      "name": "Mocha",
+      "description": "Slightly increase attack speed and movement speed.",
+      "rarity": "Common",
+      "category": [
+        "Damage",
+        "Utility"
+      ],
+      "stats": [
+        {
+          "stat": "Attack Speed",
+          "value": 7.5,
+          "stacking": "Linear",
+          "stackAdd": 7.5
+        },
+        {
+          "stat": "Movement Speed",
+          "value": 7,
+          "stacking": "Linear",
+          "stackAdd": 7
+        }
+      ],
+      "mechanics": {
+        "notes": [
+          "Mocha provides buffs equal to half of those granted by Soldier's Syringe (Attack Speed) and Paul's Goat Hoof (Movement Speed)."
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "name": "Infusion",
+      "description": "Killing an enemy permanently increases your maximum health, up to 100.",
+      "rarity": "Uncommon",
+      "category": [
+        "Utility",
+        "Healing",
+        "OnKillEffect"
+      ],
+      "stats": [
+        {
+          "stat": "Max Health Increase",
+          "value": 100,
+          "stacking": "Linear",
+          "stackAdd": 100
+        },
+        {
+          "stat": "Health Per Kill",
+          "value": 1,
+          "stacking": "Linear",
+          "stackAdd": 0.5
+        }
+      ],
+      "mechanics": {
+        "notes": [
+          "When an enemy is killed, the player gains bonus health through a red particle effect.",
+          "Turrets spawned by Engineer benefit from Infusion, but only gain health from their own kills.",
+          "Bonus health is lost if Infusions are removed but restored if the item is regained.",
+          "If Glass is active, the health-to-kill ratio changes from 1:1 to 1:10.",
+          "This is not considered a healing item (e.g., for the Naturopath challenge).",
+          "Destroying certain destructible objects in levels can also trigger Infusion (e.g., explosive pots, Alloy Vulture Nests).",
+          "Additional stacks of Infusion provide an effective health-per-kill gain of 0.5."
+        ]
+      }
+    }
+  ]
+}

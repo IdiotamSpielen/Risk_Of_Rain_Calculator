@@ -1,0 +1,86 @@
+{
+  "difficulties": [
+    {
+      "name": "Drizzle",
+      "description": "Reduces difficulty for players new to the game. Weeping and gnashing is replaced by laughter and tickles.",
+      "timeScalingFactor": 0.5,
+      "armorBonus": 70,
+      "healthRegenMultiplier": 1.5,
+      "challengeRestrictions": []
+    },
+    {
+      "name": "Monsoon",
+      "description": "For hardcore players. Every bend introduces pain and horrors of the planet. You will die.",
+      "timeScalingFactor": 1.5,
+      "armorBonus": 0,
+      "healthRegenMultiplier": 0.6,
+      "challengeRestrictions": [
+        "Deicide",
+        "The Calm",
+        "Mastery Challenges"
+      ]
+    },
+    {
+      "name": "Eclipse",
+      "description": "You only celebrate in the light... because I allow it.",
+      "timeScalingFactor": 1.5,
+      "armorBonus": 0,
+      "healthRegenMultiplier": 0.6,
+      "challengeRestrictions": [
+        "Artifacts disabled",
+        "No Beads of Fealty",
+        "No Void Locus access"
+      ],
+      "eclipseModifiers": [
+        {
+          "level": 1,
+          "modifier": "Ally Starting Health: -50%"
+        },
+        {
+          "level": 2,
+          "modifier": "Teleporter Radius: -50%"
+        },
+        {
+          "level": 3,
+          "modifier": "Ally Fall Damage: +100% and lethal"
+        },
+        {
+          "level": 4,
+          "modifier": "Enemy Speed: +40%"
+        },
+        {
+          "level": 5,
+          "modifier": "Ally Healing: -50%"
+        },
+        {
+          "level": 6,
+          "modifier": "Enemy Gold Drops: -20%"
+        },
+        {
+          "level": 7,
+          "modifier": "Enemy Cooldowns: -50%"
+        },
+        {
+          "level": 8,
+          "modifier": "Allies receive permanent damage"
+        }
+      ]
+    }
+  ],
+  "difficultyScalingDetails": {
+    "subDifficulties": [
+      "Easy",
+      "Normal",
+      "Hard",
+      "Very Hard",
+      "Insane",
+      "Impossible",
+      "I SEE YOU",
+      "I'M COMING FOR YOU",
+      "HAHAHAHA"
+    ],
+    "maximumSubDifficultyLevel": 99,
+    "exponentialIncreasePerEnvironment": true,
+    "timeBasedScaling": true
+  }
+}
